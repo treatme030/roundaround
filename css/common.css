@@ -1,6 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;700&family=Roboto:wght@200;300;400;700&display=swap");
 
 body {
   font-family: "Roboto", "Noto Sans KR";
   font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+div,
+ul,
+li,
+p {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.38;
+  margin-bottom: 16px;
+}
+
+.desc {
+  font-weight: 300;
+  line-height: 1.38;
+}
+
+.more {
+  display: inline-block;
+  padding: 20px 0 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.38;
+}
+
+.bb-b {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.bb-w {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.lh {
+  line-height: 1.38;
+}
+
+.c-wh {
+  color: rgb(255, 255, 255);
+}
+
+.c-b {
+  color: rgb(0, 0, 0);
 }

@@ -1,5 +1,260 @@
 .wrap {
-  background-color: pink;
   width: 100%;
   min-height: 100%;
+}
+
+/* Header */
+
+.gnb-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 40px 80px 32px 80px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: none;
+}
+
+/* Main*/
+
+.main-container {
+  padding: 0 0 160px 0;
+}
+
+/* Main-daylife */
+
+.daylife-wrap {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.text-box {
+  width: 50%;
+  margin-right: 50%;
+  padding-top: calc(50vh - 97px);
+  padding-bottom: 60px;
+}
+
+.text-box .contents {
+  width: 486px;
+  margin: 0 auto;
+}
+.text-box .contents .logo {
+  width: 284px;
+  height: 82px;
+  margin-bottom: 60px;
+  background-image: url("../img/logo.png");
+  background-size: 284px;
+}
+
+.text-box .contents .copy {
+  color: rgb(85, 85, 85);
+  font-weight: 300;
+  line-height: 1.38;
+}
+
+.text-box .contents .copy span {
+  font-weight: 500;
+}
+
+.daylife-wrap .visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  min-height: 100vh;
+  background-image: url("../img/visual01.jpg");
+  background-attachment: fixed; /*배경이미지 뷰포트 고정, 사이즈와 포지션 잡아줘야 함*/
+  background-size: contain;
+  background-position: 50vw top;
+}
+
+/* Main-story */
+
+.story-container {
+  height: 720px;
+  background-image: url("../img/parallax_bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-container .story-contents {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.story-container .story-contents .story-title {
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.story-container .story-contents .brand-meaning {
+  line-height: 1.38;
+}
+
+.story-container .story-contents .story-html {
+  display: block;
+  width: 180px;
+  line-height: 1.38;
+  margin: 60px 126px 0;
+  padding: 10px 0;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* Main-moment */
+
+.moment-container {
+  padding: 120px 0 100px 0;
+}
+
+.moment-container .moments-item-box {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.moment-container .moments-item-box h3 {
+  font-size: 40px;
+  font-weight: 300;
+  padding: 0 0 40px 0;
+  line-height: 1.38;
+}
+
+.moment-container .moments-item-box .item-box {
+  display: grid;
+  height: 714px;
+  grid-template-areas:
+    "item-img1 more-info item-img3 item-img4"
+    "item-img1 more-info using using"
+    "item-img1 item-img2 using using"
+    "item-img1 item-img2 copy copy";
+  grid-template-columns: 588px 228px 192px 192px;
+  grid-template-rows: 192px 294px 90px 138px;
+}
+
+.item-box div {
+  background-color: rgb(118, 136, 127);
+}
+
+.item-img1 {
+  background-image: url("../img/moment01.jpg");
+  grid-area: item-img1;
+}
+
+.more-info {
+  grid-area: more-info;
+  color: rgb(255, 255, 255);
+  padding: 160px 24px 0;
+  text-align: start;
+}
+
+.more-info p {
+  font-weight: 300;
+  line-height: 1.38;
+}
+
+.item-img2 {
+  background-image: url("../img/moment05.jpg");
+  grid-area: item-img2;
+}
+
+.item-img3 {
+  background-image: url("../img/moment02.jpg");
+  grid-area: item-img3;
+}
+
+.item-img4 {
+  background-image: url("../img/moment03.jpg");
+  grid-area: item-img4;
+}
+
+.using {
+  background-image: url("../img/moment04.jpg");
+  grid-area: using;
+}
+
+.copy {
+  grid-area: copy;
+  font-weight: 300;
+  line-height: 1.38;
+  padding: 40px 60px 0;
+  text-align: start;
+  color: rgb(255, 255, 255);
+}
+
+/* Main-skincare */
+
+.skincare-container {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.skincare-container .skincare-visual {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("../img/visual03.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: left;
+}
+
+.skincare-container .skincare-text {
+  width: 50%;
+  margin: 0 0 0 50%;
+  padding: 60px 0;
+}
+
+.skincare-container .skincare-text .skincare-contents {
+  width: 486px;
+  margin: 0 auto;
+  padding: calc(50% + 200px) 0;
+}
+
+.skincare-contents a {
+  display: block;
+  width: 120px;
+  line-height: 1.38;
+  margin: 60px 0 0 0;
+  padding: 10px 0;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(179, 179, 179);
+  text-align: center;
+}
+
+.products-right {
+  width: 588px;
+  padding: 60px 0 0 0;
+  margin: 0 0 0 58px;
+  background-image: url(../img/figure04.jpg);
+  background-size: auto;
+  background-position: left;
+}
+
+.greentea-text {
+  padding: 0 0 0 340px;
+}
+
+.greentea-text a {
+  position: relative;
+  padding-bottom: 93px;
+}
+
+.greentea-text a:before {
+  position: absolute;
+  content: "";
+  bottom: 93px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
 }
