@@ -1,77 +1,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;700&family=Roboto:wght@200;300;400;700&display=swap");
 
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.show {
+    animation: slideUp 1s;
+    animation-fill-mode: both;
+}
+
 body {
-  font-family: "Roboto", "Noto Sans KR";
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 400;
+    font-family: "Roboto", "Noto Sans KR";
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
 }
 
 div,
 ul,
 li,
 p {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/* cursor-style */
-
 .cursor {
-  cursor: pointer;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+}
+
+.item {
+    margin: 40px 204px 0 0;
+    padding: 0 0 120px 0;
+    display: flex;
+}
+
+.item-img {
+    width: 180px;
 }
 
 /* font-style */
 
 .title {
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 1.38;
-  margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.38;
+    margin-bottom: 16px;
 }
 
 .sub-title {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1.38;
-  margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.38;
+    margin-bottom: 16px;
 }
 
 .desc {
-  font-weight: 300;
-  line-height: 1.38;
+    font-weight: 300;
+    line-height: 1.38;
 }
 
 /* btn-style */
 
 .more {
-  display: inline-block;
-  padding: 20px 0 0 0;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.38;
-  color: rgb(0, 0, 0);
-  text-decoration-line: underline;
+    display: inline-block;
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.38;
+    color: rgb(0, 0, 0);
+    text-decoration-line: underline;
 }
 
 .more-box {
-  display: block;
-  width: 120px;
-  line-height: 1.38;
-  margin: 60px 0 0 0;
-  padding: 10px 0;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(179, 179, 179);
-  text-align: center;
+    display: block;
+    width: 120px;
+    line-height: 1.38;
+    margin: 60px 0 0 0;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(179, 179, 179);
+    text-align: center;
 }
 
 /* color-style */
 
 .c-wh {
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .c-b {
-  color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
