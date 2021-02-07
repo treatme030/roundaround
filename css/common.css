@@ -16,13 +16,24 @@ p {
   background-repeat: no-repeat;
 }
 
+/* cursor-style */
+
 .cursor {
   cursor: pointer;
 }
 
+/* font-style */
+
 .title {
   font-size: 40px;
   font-weight: 300;
+  line-height: 1.38;
+  margin-bottom: 16px;
+}
+
+.sub-title {
+  font-size: 32px;
+  font-weight: 400;
   line-height: 1.38;
   margin-bottom: 16px;
 }
@@ -32,29 +43,30 @@ p {
   line-height: 1.38;
 }
 
+/* btn-style */
+
 .more {
   display: inline-block;
   padding: 20px 0 0 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.38;
+  color: rgb(0, 0, 0);
+  text-decoration-line: underline;
 }
 
-.bb-b {
-  border-bottom: 1px solid rgb(0, 0, 0);
-}
-
-.bb-w {
-  border-bottom: 1px solid rgb(255, 255, 255);
-}
-
-.fw-300 {
-  font-weight: 300;
-}
-
-.lh {
+.more-box {
+  display: block;
+  width: 120px;
   line-height: 1.38;
+  margin: 60px 0 0 0;
+  padding: 10px 0;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(179, 179, 179);
+  text-align: center;
 }
+
+/* color-style */
 
 .c-wh {
   color: rgb(255, 255, 255);
