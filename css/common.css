@@ -13,6 +13,8 @@
 
 .show {
     animation: slideUp 1s;
+    /* animation-timing-function: ease-in-out;
+    animation-iteration-count: ; */
     animation-fill-mode: both;
 }
 
