@@ -2,7 +2,20 @@
 
 ## 💋 roundaround 사이트 따라 만들어보기 
 https://treatme030.github.io/roundaround
- * grid를 이용한 레이아웃
+ * grid-template-areas를 이용한 아이템 레이아웃
+ ```javascript
+ .moment-container .moments-item-box .item-box {
+    display: grid;
+    height: 714px;
+    grid-template-areas:
+        "item-img1 more-info item-img3 item-img4"
+        "item-img1 more-info using using"
+        "item-img1 item-img2 using using"
+        "item-img1 item-img2 copy copy";
+    grid-template-columns: 588px 228px 192px 192px;
+    grid-template-rows: 192px 294px 90px 138px;
+}
+```
  * 배경 이미지 고정
 
 ![pro](https://user-images.githubusercontent.com/74355328/147443418-272ab283-41fc-4f34-8b6a-5c3899ab5905.gif)
