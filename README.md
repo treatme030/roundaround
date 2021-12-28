@@ -16,6 +16,6 @@ https://treatme030.github.io/roundaround
     grid-template-rows: 192px 294px 90px 138px;
 }
 ```
- * 배경 이미지 고정
+ * background-attachment를 이용한 배경이미지 고정
 
 ![pro](https://user-images.githubusercontent.com/74355328/147443418-272ab283-41fc-4f34-8b6a-5c3899ab5905.gif)
